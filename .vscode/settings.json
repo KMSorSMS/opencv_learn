@@ -1,0 +1,11 @@
+{
+    "cmake.debugConfig": {
+        "args": ["/home/liam/Documents/codes/miku2.jpg"]
+    },
+    "files.associations": {
+        "iostream": "cpp",
+        "array": "cpp",
+        "string": "cpp",
+        "string_view": "cpp"
+    }
+}

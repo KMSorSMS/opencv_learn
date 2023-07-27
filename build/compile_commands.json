@@ -1,7 +1,17 @@
 [
 {
   "directory": "/home/liam/Documents/codes/build",
-  "command": "/usr/bin/g++   -isystem /usr/local/include/opencv4  -g   -std=gnu++11 -o CMakeFiles/camerashow.dir/src/MatOpencv.cpp.o -c /home/liam/Documents/codes/src/MatOpencv.cpp",
+  "command": "/usr/bin/g++   -isystem /usr/local/include/opencv4  -g   -std=gnu++11 -o CMakeFiles/onlyfindcontours.dir/src/onlyfindcontours.cpp.o -c /home/liam/Documents/codes/src/onlyfindcontours.cpp",
+  "file": "/home/liam/Documents/codes/src/onlyfindcontours.cpp"
+},
+{
+  "directory": "/home/liam/Documents/codes/build",
+  "command": "/usr/bin/g++   -isystem /usr/local/include/opencv4  -g   -std=gnu++11 -o CMakeFiles/camera.dir/src/camera.cpp.o -c /home/liam/Documents/codes/src/camera.cpp",
+  "file": "/home/liam/Documents/codes/src/camera.cpp"
+},
+{
+  "directory": "/home/liam/Documents/codes/build",
+  "command": "/usr/bin/g++   -isystem /usr/local/include/opencv4  -g   -std=gnu++11 -o CMakeFiles/MatOpencv.dir/src/MatOpencv.cpp.o -c /home/liam/Documents/codes/src/MatOpencv.cpp",
   "file": "/home/liam/Documents/codes/src/MatOpencv.cpp"
 }
 ]

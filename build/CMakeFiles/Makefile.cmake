@@ -51,5 +51,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/camerashow.dir/DependInfo.cmake"
+  "CMakeFiles/onlyfindcontours.dir/DependInfo.cmake"
+  "CMakeFiles/camera.dir/DependInfo.cmake"
+  "CMakeFiles/MatOpencv.dir/DependInfo.cmake"
   )

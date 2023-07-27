@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/liam/Documents/codes/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,17 +111,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named camerashow
+# Target rules for targets named onlyfindcontours
 
 # Build rule for target.
-camerashow: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 camerashow
-.PHONY : camerashow
+onlyfindcontours: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 onlyfindcontours
+.PHONY : onlyfindcontours
 
 # fast build rule for target.
-camerashow/fast:
-	$(MAKE) -f CMakeFiles/camerashow.dir/build.make CMakeFiles/camerashow.dir/build
-.PHONY : camerashow/fast
+onlyfindcontours/fast:
+	$(MAKE) -f CMakeFiles/onlyfindcontours.dir/build.make CMakeFiles/onlyfindcontours.dir/build
+.PHONY : onlyfindcontours/fast
+
+#=============================================================================
+# Target rules for targets named camera
+
+# Build rule for target.
+camera: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera
+.PHONY : camera
+
+# fast build rule for target.
+camera/fast:
+	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/build
+.PHONY : camera/fast
+
+#=============================================================================
+# Target rules for targets named MatOpencv
+
+# Build rule for target.
+MatOpencv: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MatOpencv
+.PHONY : MatOpencv
+
+# fast build rule for target.
+MatOpencv/fast:
+	$(MAKE) -f CMakeFiles/MatOpencv.dir/build.make CMakeFiles/MatOpencv.dir/build
+.PHONY : MatOpencv/fast
 
 src/MatOpencv.o: src/MatOpencv.cpp.o
 
@@ -129,7 +155,7 @@ src/MatOpencv.o: src/MatOpencv.cpp.o
 
 # target to build an object file
 src/MatOpencv.cpp.o:
-	$(MAKE) -f CMakeFiles/camerashow.dir/build.make CMakeFiles/camerashow.dir/src/MatOpencv.cpp.o
+	$(MAKE) -f CMakeFiles/MatOpencv.dir/build.make CMakeFiles/MatOpencv.dir/src/MatOpencv.cpp.o
 .PHONY : src/MatOpencv.cpp.o
 
 src/MatOpencv.i: src/MatOpencv.cpp.i
@@ -138,7 +164,7 @@ src/MatOpencv.i: src/MatOpencv.cpp.i
 
 # target to preprocess a source file
 src/MatOpencv.cpp.i:
-	$(MAKE) -f CMakeFiles/camerashow.dir/build.make CMakeFiles/camerashow.dir/src/MatOpencv.cpp.i
+	$(MAKE) -f CMakeFiles/MatOpencv.dir/build.make CMakeFiles/MatOpencv.dir/src/MatOpencv.cpp.i
 .PHONY : src/MatOpencv.cpp.i
 
 src/MatOpencv.s: src/MatOpencv.cpp.s
@@ -147,8 +173,62 @@ src/MatOpencv.s: src/MatOpencv.cpp.s
 
 # target to generate assembly for a file
 src/MatOpencv.cpp.s:
-	$(MAKE) -f CMakeFiles/camerashow.dir/build.make CMakeFiles/camerashow.dir/src/MatOpencv.cpp.s
+	$(MAKE) -f CMakeFiles/MatOpencv.dir/build.make CMakeFiles/MatOpencv.dir/src/MatOpencv.cpp.s
 .PHONY : src/MatOpencv.cpp.s
+
+src/camera.o: src/camera.cpp.o
+
+.PHONY : src/camera.o
+
+# target to build an object file
+src/camera.cpp.o:
+	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/src/camera.cpp.o
+.PHONY : src/camera.cpp.o
+
+src/camera.i: src/camera.cpp.i
+
+.PHONY : src/camera.i
+
+# target to preprocess a source file
+src/camera.cpp.i:
+	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/src/camera.cpp.i
+.PHONY : src/camera.cpp.i
+
+src/camera.s: src/camera.cpp.s
+
+.PHONY : src/camera.s
+
+# target to generate assembly for a file
+src/camera.cpp.s:
+	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/src/camera.cpp.s
+.PHONY : src/camera.cpp.s
+
+src/onlyfindcontours.o: src/onlyfindcontours.cpp.o
+
+.PHONY : src/onlyfindcontours.o
+
+# target to build an object file
+src/onlyfindcontours.cpp.o:
+	$(MAKE) -f CMakeFiles/onlyfindcontours.dir/build.make CMakeFiles/onlyfindcontours.dir/src/onlyfindcontours.cpp.o
+.PHONY : src/onlyfindcontours.cpp.o
+
+src/onlyfindcontours.i: src/onlyfindcontours.cpp.i
+
+.PHONY : src/onlyfindcontours.i
+
+# target to preprocess a source file
+src/onlyfindcontours.cpp.i:
+	$(MAKE) -f CMakeFiles/onlyfindcontours.dir/build.make CMakeFiles/onlyfindcontours.dir/src/onlyfindcontours.cpp.i
+.PHONY : src/onlyfindcontours.cpp.i
+
+src/onlyfindcontours.s: src/onlyfindcontours.cpp.s
+
+.PHONY : src/onlyfindcontours.s
+
+# target to generate assembly for a file
+src/onlyfindcontours.cpp.s:
+	$(MAKE) -f CMakeFiles/onlyfindcontours.dir/build.make CMakeFiles/onlyfindcontours.dir/src/onlyfindcontours.cpp.s
+.PHONY : src/onlyfindcontours.cpp.s
 
 # Help Target
 help:
@@ -156,12 +236,20 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... camerashow"
+	@echo "... onlyfindcontours"
+	@echo "... camera"
+	@echo "... rebuild_cache"
+	@echo "... MatOpencv"
 	@echo "... src/MatOpencv.o"
 	@echo "... src/MatOpencv.i"
 	@echo "... src/MatOpencv.s"
+	@echo "... src/camera.o"
+	@echo "... src/camera.i"
+	@echo "... src/camera.s"
+	@echo "... src/onlyfindcontours.o"
+	@echo "... src/onlyfindcontours.i"
+	@echo "... src/onlyfindcontours.s"
 .PHONY : help
 
 

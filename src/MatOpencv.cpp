@@ -121,9 +121,9 @@ int main(int argc, char **argv)
     // 用findcontours寻找轮廓
     vector<vector<Point>> green_contours, white_contours, red_contours;
     vector<Vec4i> green_hierarchy, white_hierarchy, red_hierarchy;
-    findContours(green_canny, green_contours, green_hierarchy, RETR_TREE, CHAIN_APPROX_SIMPLE, Point(0, 0)); // 绿色
+    findContours(green_canny, green_contours, green_hierarchy, RETR_TREE, CHAIN_APPROX_NONE, Point(0, 0)); // 绿色
     findContours(white_canny, white_contours, white_hierarchy, RETR_TREE, CHAIN_APPROX_SIMPLE, Point(0, 0)); // 白色
-    findContours(red_canny, red_contours, red_hierarchy, RETR_TREE, CHAIN_APPROX_SIMPLE, Point(0, 0));       // 红色
+    findContours(red_canny, red_contours, red_hierarchy, RETR_TREE, CHAIN_APPROX_TC89_L1, Point(0, 0));       // 红色
     // 画出轮廓
     Mat green_contours_result, white_contours_result, red_contours_result;
     green_contours_result = Mat::zeros(green_canny.size(), CV_8UC3); // 绿色
@@ -132,17 +132,17 @@ int main(int argc, char **argv)
     for (int i = 0; i < green_contours.size(); i++)
     {
         Scalar color = Scalar(0, 255, 0);
-        drawContours(green_contours_result, green_contours, i, color, 2, 8, green_hierarchy, 0, Point()); // 绿色
+        drawContours(green_contours_result, green_contours, i, color, 1, 8, green_hierarchy, 0, Point()); // 绿色
     }
     for (int i = 0; i < white_contours.size(); i++)
     {
-        Scalar color = Scalar(0, 255, 0);
-        drawContours(white_contours_result, white_contours, i, color, 2, 8, white_hierarchy, 0, Point()); // 白色
+        Scalar color = Scalar(255, 255, 255);
+        drawContours(white_contours_result, white_contours, i, color, 1, 8, white_hierarchy, 0, Point()); // 白色
     }
     for (int i = 0; i < red_contours.size(); i++)
     {
-        Scalar color = Scalar(0, 255, 0);
-        drawContours(red_contours_result, red_contours, i, color, 2, 8, red_hierarchy, 0, Point()); // 红色
+        Scalar color = Scalar(0, 0, 255);
+        drawContours(red_contours_result, red_contours, i, color, 1, 8, red_hierarchy, 0, Point()); // 红色
     }
     // 显示
     imshow("green_contours_result", green_contours_result);

@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/liam/Documents/codes/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/camerashow.dir/all
+all:
 
 .PHONY : all
 
@@ -63,36 +63,92 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/camerashow.dir/clean
+clean: CMakeFiles/onlyfindcontours.dir/clean
+clean: CMakeFiles/camera.dir/clean
+clean: CMakeFiles/MatOpencv.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/camerashow.dir
+# Target rules for target CMakeFiles/onlyfindcontours.dir
 
 # All Build rule for target.
-CMakeFiles/camerashow.dir/all:
-	$(MAKE) -f CMakeFiles/camerashow.dir/build.make CMakeFiles/camerashow.dir/depend
-	$(MAKE) -f CMakeFiles/camerashow.dir/build.make CMakeFiles/camerashow.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liam/Documents/codes/build/CMakeFiles --progress-num=1,2 "Built target camerashow"
-.PHONY : CMakeFiles/camerashow.dir/all
+CMakeFiles/onlyfindcontours.dir/all:
+	$(MAKE) -f CMakeFiles/onlyfindcontours.dir/build.make CMakeFiles/onlyfindcontours.dir/depend
+	$(MAKE) -f CMakeFiles/onlyfindcontours.dir/build.make CMakeFiles/onlyfindcontours.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liam/Documents/codes/build/CMakeFiles --progress-num=5,6 "Built target onlyfindcontours"
+.PHONY : CMakeFiles/onlyfindcontours.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/camerashow.dir/rule: cmake_check_build_system
+CMakeFiles/onlyfindcontours.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/liam/Documents/codes/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/camerashow.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/onlyfindcontours.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/liam/Documents/codes/build/CMakeFiles 0
-.PHONY : CMakeFiles/camerashow.dir/rule
+.PHONY : CMakeFiles/onlyfindcontours.dir/rule
 
 # Convenience name for target.
-camerashow: CMakeFiles/camerashow.dir/rule
+onlyfindcontours: CMakeFiles/onlyfindcontours.dir/rule
 
-.PHONY : camerashow
+.PHONY : onlyfindcontours
 
 # clean rule for target.
-CMakeFiles/camerashow.dir/clean:
-	$(MAKE) -f CMakeFiles/camerashow.dir/build.make CMakeFiles/camerashow.dir/clean
-.PHONY : CMakeFiles/camerashow.dir/clean
+CMakeFiles/onlyfindcontours.dir/clean:
+	$(MAKE) -f CMakeFiles/onlyfindcontours.dir/build.make CMakeFiles/onlyfindcontours.dir/clean
+.PHONY : CMakeFiles/onlyfindcontours.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/camera.dir
+
+# All Build rule for target.
+CMakeFiles/camera.dir/all:
+	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/depend
+	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liam/Documents/codes/build/CMakeFiles --progress-num=3,4 "Built target camera"
+.PHONY : CMakeFiles/camera.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/camera.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liam/Documents/codes/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/camera.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liam/Documents/codes/build/CMakeFiles 0
+.PHONY : CMakeFiles/camera.dir/rule
+
+# Convenience name for target.
+camera: CMakeFiles/camera.dir/rule
+
+.PHONY : camera
+
+# clean rule for target.
+CMakeFiles/camera.dir/clean:
+	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/clean
+.PHONY : CMakeFiles/camera.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/MatOpencv.dir
+
+# All Build rule for target.
+CMakeFiles/MatOpencv.dir/all:
+	$(MAKE) -f CMakeFiles/MatOpencv.dir/build.make CMakeFiles/MatOpencv.dir/depend
+	$(MAKE) -f CMakeFiles/MatOpencv.dir/build.make CMakeFiles/MatOpencv.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liam/Documents/codes/build/CMakeFiles --progress-num=1,2 "Built target MatOpencv"
+.PHONY : CMakeFiles/MatOpencv.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/MatOpencv.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liam/Documents/codes/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/MatOpencv.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liam/Documents/codes/build/CMakeFiles 0
+.PHONY : CMakeFiles/MatOpencv.dir/rule
+
+# Convenience name for target.
+MatOpencv: CMakeFiles/MatOpencv.dir/rule
+
+.PHONY : MatOpencv
+
+# clean rule for target.
+CMakeFiles/MatOpencv.dir/clean:
+	$(MAKE) -f CMakeFiles/MatOpencv.dir/build.make CMakeFiles/MatOpencv.dir/clean
+.PHONY : CMakeFiles/MatOpencv.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

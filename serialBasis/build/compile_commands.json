@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/liam/Documents/codes/serialBasis/build",
+  "command": "/usr/bin/g++   -I/home/liam/Documents/codes/serialBasis/uart -I/home/liam/Documents/codes/serialBasis/include -isystem /usr/local/include/opencv4  -g   -Wno-format-extra-args -std=c++17 -O2 -o CMakeFiles/uart_template.dir/main.cpp.o -c /home/liam/Documents/codes/serialBasis/main.cpp",
+  "file": "/home/liam/Documents/codes/serialBasis/main.cpp"
+},
+{
+  "directory": "/home/liam/Documents/codes/serialBasis/build",
+  "command": "/usr/bin/g++   -I/home/liam/Documents/codes/serialBasis/uart -I/home/liam/Documents/codes/serialBasis/include -isystem /usr/local/include/opencv4  -g   -Wno-format-extra-args -std=c++17 -O2 -o CMakeFiles/uart_template.dir/src/Uart.cpp.o -c /home/liam/Documents/codes/serialBasis/src/Uart.cpp",
+  "file": "/home/liam/Documents/codes/serialBasis/src/Uart.cpp"
+}
+]

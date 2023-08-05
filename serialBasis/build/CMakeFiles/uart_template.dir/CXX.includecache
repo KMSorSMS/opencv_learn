@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Uart.hpp
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+fcntl.h
+-
+sys/termios.h
+-
+errno.h
+-
+stdint.h
+-
+string
+-
+cstring
+-
+sys/ioctl.h
+-
+
+/home/liam/Documents/codes/serialBasis/main.cpp
+iostream
+-
+Uart.hpp
+/home/liam/Documents/codes/serialBasis/Uart.hpp
+pthread.h
+-
+sys/time.h
+-
+unistd.h
+-
+
